@@ -4,7 +4,6 @@ function TopSongs({ songs }) {
   return (
     <section className="topSongs">
       {songs.map((song) => {
-        console.log(song.track);
         return (
           <div key={song.track.track_id}>
             <h3>{song.track.artist_name}</h3>

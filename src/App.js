@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import TopSongs from "./components/TopSongs";
+import SingleTrack from "./components/SingleTrack";
 
 function App() {
   const [songs, setSongs] = useState([]);
@@ -20,6 +21,7 @@ function App() {
   return (
     <main>
       <TopSongs songs={songs} />
+      <SingleTrack songs={songs} />
     </main>
   );
 }
