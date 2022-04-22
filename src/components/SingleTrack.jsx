@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import Moment from "react-moment";
+import { useParams } from "react-router-dom";
 
 function SingleTrack() {
   const [lyrics, setLyrics] = useState([]);
   const [track, setTrack] = useState([]);
   const key = "396e01083953a35374e8be9bf794350a";
   console.log(track);
+  const { id } = useParams();
 
   const fetchLyrics = async () => {
     const response = await fetch(
-      `https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=234237297&apikey=${key}`
+      `https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${id}&apikey=${key}`
     );
     const data = await response.json();
     setLyrics(data.message.body.lyrics);
@@ -17,7 +19,7 @@ function SingleTrack() {
 
   const fetchTrack = async () => {
     const response = await fetch(
-      `https://api.musixmatch.com/ws/1.1/track.get?track_id=223585441&apikey=${key}`
+      `https://api.musixmatch.com/ws/1.1/track.get?track_id=${id}&apikey=${key}`
     );
     const data = await response.json();
     setTrack(data.message.body.track);
