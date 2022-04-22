@@ -1,3 +1,9 @@
+#title {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .topSongs {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
@@ -16,15 +22,15 @@
       font-weight: 500;
       font-size: 1.1rem;
 
-      span {
-        font-weight: 700;
+      strong svg {
+        font-size: 1rem;
       }
     }
 
     a {
       display: block;
       width: 100%;
-      background-color: #000;
+      background-color: #2d3339;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
@@ -32,6 +38,11 @@
       padding: 10px 0;
       margin-top: 1rem;
       border-radius: 4px;
+      transition: $primaryTransition;
+
+      &:hover {
+        background-color: #000;
+      }
     }
   }
 }

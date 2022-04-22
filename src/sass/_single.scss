@@ -1,0 +1,47 @@
+.single {
+  > a {
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #2d3339;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 7px;
+    border-radius: 2px;
+    transition: $primaryTransition;
+
+    &:hover {
+      background-color: #000;
+    }
+  }
+
+  > div {
+    margin: 2rem 0;
+
+    > div {
+      margin-bottom: 2rem;
+
+      p {
+        font-weight: 400;
+        font-size: 1.2rem;
+        border: 1px solid #828282;
+        padding: 10px 15px;
+        background-color: #f8f6f8;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        border: 1px solid #828282;
+        padding: 10px 15px;
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
