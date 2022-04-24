@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { RiPlayFill, RiDiscFill } from "react-icons/ri";
+import SearchBar from "./SearchBar";
 
 function TopSongs() {
   const [songs, setSongs] = useState([]);
@@ -20,6 +21,7 @@ function TopSongs() {
 
   return (
     <>
+      <SearchBar />
       <h1 id="title">Top 10 tracks</h1>
       <section className="topSongs">
         {songs.map((song) => {

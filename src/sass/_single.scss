@@ -25,7 +25,15 @@
         font-size: 1.2rem;
         border: 1px solid #828282;
         padding: 10px 15px;
-        background-color: #f8f6f8;
+
+        &:first-of-type {
+          background-color: #e2e2e2;
+        }
+
+        &:last-of-type {
+          padding: 15px;
+          line-height: 25px;
+        }
 
         strong {
           font-weight: 600;

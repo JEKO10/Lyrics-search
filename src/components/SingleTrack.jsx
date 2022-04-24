@@ -7,7 +7,7 @@ function SingleTrack() {
   const [lyrics, setLyrics] = useState([]);
   const [track, setTrack] = useState([]);
   const key = "396e01083953a35374e8be9bf794350a";
-  console.log(track);
+  console.log(lyrics);
   const { id } = useParams();
 
   const fetchLyrics = async () => {
@@ -40,20 +40,7 @@ function SingleTrack() {
             <p>
               <strong>{track.track_name} by</strong> {track.artist_name}
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              corporis dolore eius iste voluptatem laudantium cumque sit hic
-              autem eveniet repudiandae vitae quod, adipisci harum vero,
-              veritatis esse eos incidunt assumenda. Quibusdam non odio quasi,
-              voluptatibus facilis architecto soluta cupiditate possimus, optio
-              eligendi dignissimos impedit at iusto voluptates totam hic eius
-              placeat officiis libero? Sapiente, porro libero. Vitae natus alias
-              consequuntur nemo, repellat dolor harum voluptates rerum a vel ab
-              quisquam sequi numquam ipsum labore eum dolore odio at nobis?
-              Eligendi omnis, vitae alias, saepe placeat recusandae sit iste
-              nesciunt ea debitis eveniet atque tempore fugit consequatur odit
-              tenetur illum.
-            </p>
+            <p>{lyrics.lyrics_body}</p>
           </div>
           {track.primary_genres !== undefined ? (
             <ul>
