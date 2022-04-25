@@ -23,7 +23,7 @@ function TopSongs() {
     <>
       <SearchBar />
       <h1 id="title">Top 10 tracks</h1>
-      <section className="topSongs">
+      <section className="homeTracks">
         {songs.map((song) => {
           return (
             <div key={song.track.track_id}>
