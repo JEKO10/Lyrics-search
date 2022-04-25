@@ -7,8 +7,8 @@ function SingleTrack() {
   const [lyrics, setLyrics] = useState([]);
   const [track, setTrack] = useState([]);
   const key = "396e01083953a35374e8be9bf794350a";
-  console.log(lyrics);
   const { id } = useParams();
+  console.log(track.primary_genres);
 
   const fetchLyrics = async () => {
     const response = await fetch(
@@ -49,10 +49,10 @@ function SingleTrack() {
               </li>
               <li>
                 <strong>Song Genre:</strong>{" "}
-                {
-                  track.primary_genres.music_genre_list[0].music_genre
-                    .music_genre_name
-                }
+                {track.primary_genres.music_genre_list.length !== 0
+                  ? track.primary_genres.music_genre_list[0].music_genre
+                      .music_genre_name
+                  : "No genre found"}
               </li>
               <li>
                 <strong>Explicit content:</strong>{" "}

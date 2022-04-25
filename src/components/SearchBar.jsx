@@ -26,7 +26,7 @@ function Search() {
       <section className="searchBar">
         <input
           type="text"
-          placeholder="Search for tracks"
+          placeholder="Song title..."
           onChange={(e) => {
             setQuery(e.target.value);
           }}
