@@ -2,3 +2,9 @@
 
 $primaryFont: "Work Sans", sans-serif;
 $primaryTransition: all 500ms ease;
+
+@mixin mediaSmall {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
