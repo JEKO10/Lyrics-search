@@ -1,4 +1,15 @@
+@include mediaMedium {
+  .homeTracks {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
 @include mediaSmall {
+  main {
+    max-width: 90vw !important;
+    margin: 3rem auto !important;
+  }
+
   .single {
     > div {
       > div {
