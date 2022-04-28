@@ -8,9 +8,7 @@ function Search() {
   const [searched, setSearched] = useState([]);
 
   const fetchSearched = async () => {
-    const response = await fetch(
-      `https://api.musixmatch.com/ws/1.1/track.search?q_track=${query}&page_size=10&page=1&s_track_rating=desc&apikey=${key}`
-    );
+    const response = await fetch(`http://localhost:5000/getData`);
     const data = await response.json();
     setSearched(data.message.body.track_list);
   };
