@@ -8,7 +8,7 @@ const key = "396e01083953a35374e8be9bf794350a";
 
 app.use(cors());
 const corsOptions = {
-  origin: "github.io",
+  origin: "https://jeko10.github.io",
 };
 
 const requestEndpoint = `https://api.musixmatch.com/ws/1.1/chart.tracks.get?page=1&page_size=10&country=us&f_has_lyrics=1&apikey=${key}`;
