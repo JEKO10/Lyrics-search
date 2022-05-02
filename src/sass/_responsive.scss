@@ -10,6 +10,17 @@
     margin: 3rem auto !important;
   }
 
+  .searchBar {
+    div {
+      flex-direction: column-reverse;
+
+      svg,
+      h1 {
+        margin: 0 auto 2rem;
+      }
+    }
+  }
+
   .single {
     > div {
       > div {

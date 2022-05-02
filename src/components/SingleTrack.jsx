@@ -11,7 +11,9 @@ function SingleTrack({ loading, setLoading }) {
 
   const fetchLyrics = async () => {
     setLoading(true);
-    const response = await fetch(`http://localhost:5000/getData`);
+    const response = await fetch(
+      `https://jekocorsproxy.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${id}&apikey=${key}`
+    );
     const data = await response.json();
     setLyrics(data.message.body.lyrics);
     setLoading(false);
@@ -19,7 +21,9 @@ function SingleTrack({ loading, setLoading }) {
 
   const fetchTrack = async () => {
     setLoading(track);
-    const response = await fetch(`http://localhost:5000/getData`);
+    const response = await fetch(
+      `https://jekocorsproxy.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.get?track_id=${id}&apikey=${key}`
+    );
     const data = await response.json();
     setTrack(data.message.body.track);
     setLoading(false);
@@ -31,7 +35,14 @@ function SingleTrack({ loading, setLoading }) {
   }, []);
 
   if (loading) {
-    return <div className="loading"></div>;
+    return (
+      <>
+        <section className="single">
+          <Link to="/">Go back</Link>
+        </section>
+        <div className="loading"></div>
+      </>
+    );
   } else {
     return (
       <section className="single">
