@@ -27,6 +27,10 @@ function Search() {
     return (
       <>
         <section className="searchBar">
+          <div>
+            <FaItunesNote />
+            <h1>Search For A Song</h1>
+          </div>
           <input
             type="text"
             placeholder="Song title..."
