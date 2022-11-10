@@ -1,11 +1,33 @@
-# Lyrics search
+<h1 align="center">
+  Lyrics search  <br/>
+  (React)
+</h1>
+<br>
 
-This project is about music. It is made in React. I used Musixmatch API to create this project, where you can search and learn more about songs, but most importantly you can read lyrics of a certain song. I used fetch and promises to get API data. I also created loader. CORS policy was causing me problems, but i managed to fix it with heroku.
+## Table of contents
 
-## Used Technologies
+- [Project task](#project-task)
+- [Project overview](#project-overview)
+- [Built with](#built-with)
+- [Live preview](#live-preview)
 
-### `React` `Sass` `React Router Dom` `Musixmatch API` `JSON` `GitHub Pages`
+## Project task
+
+This web app is about songs. I used Musixmatch API. CORS policy was causing me problems, but i managed to fix it with heroku.
+
+## Project overview
+
+You can search and learn more about songs, but most importantly you can read lyrics of a certain song. It displays basic info like artist and song genre. I used fetch and promises to get API data. I also created loader.
+
+## Built with
+
+- React
+- Sass
+- React Router Dom
+- Musixmatch API
+- JSON
+- GitHub Pages
 
 ## Live preview
 
-Live preview: https://jeko10.github.io/Lyrics-search/
+[Click for live preview](https://jeko10.github.io/Lyrics-search/)
