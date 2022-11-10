@@ -17,7 +17,7 @@ This web app is about songs. I used Musixmatch API. CORS policy was causing me p
 
 ## Project overview
 
-You can search and learn more about songs, but most importantly you can read lyrics of a certain song. It displays basic info like artist and song genre. I used fetch and promises to get API data. I also created loader.
+You can search and learn more about songs, but most importantly you can read lyrics of a certain song. It displays top 10 most popular songs and basic info like artist and song genre. I used fetch and promises to get API data. I also created loader.
 
 ## Built with
 
