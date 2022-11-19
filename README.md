@@ -13,11 +13,11 @@
 
 ## Project task
 
-This web app is about songs. I used Musixmatch API. CORS policy was causing me problems, but i managed to fix it with heroku.
+This web app is about songs. I used Musixmatch API. CORS policy was causing me problems, but I managed to fix it with Heroku.
 
 ## Project overview
 
-You can search and learn more about songs, but most importantly you can read lyrics of a certain song. It displays top 10 most popular songs and basic info like artist and song genre. I used fetch and promises to get API data. I also created loader.
+You can search and learn more about songs, but most importantly you can read the lyrics of a certain song. It displays the top 10 most popular songs and basic info like artist and song genre. I used fetch and promises to get API data. I also created a loader.
 
 ## Built with
 
